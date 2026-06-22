@@ -1,7 +1,8 @@
 {
-  "name": "playlistapp",
-  "version": "0.1.0",
-  "private": true,
+  "name": "justpasteyourplaylist",
+  "version": "1.0.0",
+  "description": "Convert Spotify & Apple Music playlists to YouTube playlists instantly",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,7 +12,8 @@
   "dependencies": {
     "next": "16.2.9",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "youtube-sr": "^4.3.12"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
