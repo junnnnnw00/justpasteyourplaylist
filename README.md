@@ -4,6 +4,8 @@
 
 **[justpasteyourplaylist.vercel.app](https://justpasteyourplaylist.vercel.app)**
 
+<a href="https://www.producthunt.com/products/just-paste-your-playlist?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-just-paste-your-playlist" target="_blank" rel="noopener noreferrer"><img alt="Just Paste Your Playlist - Share any playlist to anyone | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1177734&theme=light&t=1782100578430"></a>
+
 Your friends shouldn't need a subscription to hear your playlist. This converts any Spotify or Apple Music playlist into a YouTube playlist — free, instant, no sign-up.
 
 YouTube is the one platform everyone can access for free. That's the whole idea.
