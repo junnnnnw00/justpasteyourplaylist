@@ -28,7 +28,7 @@ Paste a link, get a YouTube playlist, share it with anyone. That's the whole ide
 
 ## 🚀 How It Works
 
-| | |
+|||
 |---|---|
 | **1. Paste** | Drop a Spotify or Apple Music playlist URL |
 | **2. Convert** | Every track is matched on YouTube automatically |
@@ -68,10 +68,6 @@ Open **[localhost:3000](http://localhost:3000)**. That's it.
 | Apple Music | Public page parsing — *no API key* |
 | YouTube | `youtube-sr` scraping — *no API key* |
 | Hosting | Vercel |
-
-## 💸 Cost
-
-**$0 / month. Zero API keys.** No Spotify developer account, no YouTube quota, no Apple Music token — everything runs on public page scraping. Hosting fits the Vercel free tier.
 
 ## 🧭 Roadmap
 
