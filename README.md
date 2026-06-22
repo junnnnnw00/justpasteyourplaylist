@@ -8,6 +8,8 @@ Your friends shouldn't need a subscription to hear your playlist. This converts 
 
 YouTube is the one platform everyone can access for free. That's the whole idea.
 
+![Demo](docs/demo.png)
+
 ## How It Works
 
 1. Paste a Spotify or Apple Music playlist URL
