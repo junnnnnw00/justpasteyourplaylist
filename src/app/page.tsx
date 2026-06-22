@@ -50,8 +50,16 @@ export default function Home() {
     <div className="min-h-screen flex flex-col font-sans text-ink selection:bg-ink selection:text-paper">
       <main className="w-full max-w-xl mx-auto flex-1 flex flex-col px-6 pt-10 pb-8">
         {/* Wordmark */}
-        <header className="font-mono text-[13px] tracking-tight text-muted">
-          justpasteyourplaylist<span className="caret text-ink">_</span>
+        <header className="flex items-center gap-2.5">
+          <svg viewBox="0 0 100 100" className="w-6 h-6 rounded-[7px] border border-hairline shrink-0" aria-hidden>
+            <rect width="100" height="100" rx="23" fill="#faf9f6" />
+            <rect x="36" y="26" width="28" height="6" rx="3" fill="#17181c" />
+            <rect x="36" y="68" width="28" height="6" rx="3" fill="#17181c" />
+            <rect x="47" y="26" width="6" height="48" fill="#17181c" />
+          </svg>
+          <span className="font-mono text-[13px] tracking-tight text-muted">
+            justpasteyourplaylist<span className="caret text-ink">_</span>
+          </span>
         </header>
 
         {/* Hero + paste field */}
