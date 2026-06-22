@@ -1,30 +1,58 @@
+<div align="center">
+
+<img src="docs/icon-512.png" width="92" alt="Just Paste Your Playlist logo" />
+
 # Just Paste Your Playlist
 
-> Paste a Spotify or Apple Music playlist link → get a YouTube playlist you can share with anyone.
+**Paste a Spotify or Apple Music playlist link → get a shareable YouTube playlist.**
 
-**[justpasteyourplaylist.vercel.app](https://justpasteyourplaylist.vercel.app)**
+Free · No sign-up · No API keys · Open source
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-17181c?style=flat-square)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-f0281e?style=flat-square)](#-contributing)
+[![Next.js](https://img.shields.io/badge/Next.js-16-17181c?style=flat-square&logo=next.js)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Deploy](https://img.shields.io/badge/Deploy-Vercel-000?style=flat-square&logo=vercel)](https://vercel.com/new/clone?repository-url=https://github.com/junnnnnw00/justpasteyourplaylist)
+
+**[Live Demo](https://justpasteyourplaylist.vercel.app)** · [How it works](#-how-it-works) · [Quick start](#-quick-start) · [Contributing](#-contributing)
 
 <a href="https://www.producthunt.com/products/just-paste-your-playlist?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-just-paste-your-playlist" target="_blank" rel="noopener noreferrer"><img alt="Just Paste Your Playlist - Share any playlist to anyone | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1177734&theme=light&t=1782100578430"></a>
 
-Your friends shouldn't need a subscription to hear your playlist. This converts any Spotify or Apple Music playlist into a YouTube playlist — free, instant, no sign-up.
+<br />
 
-YouTube is the one platform everyone can access for free. That's the whole idea.
+<img src="docs/demo.png" width="720" alt="Just Paste Your Playlist demo" />
 
-![Demo](docs/demo.png)
+</div>
 
-## How It Works
+---
 
-1. Paste a Spotify or Apple Music playlist URL
-2. The app fetches every track and finds it on YouTube
-3. Get a single YouTube link with all your songs — share it anywhere
+## ✨ Why
 
-## Contributing
+Your friends shouldn't need a subscription to hear your playlist. You're on Spotify, they're on Apple Music, someone's mom only opens YouTube. **YouTube is the one platform everyone can access for free** — so this bridges the gap.
 
-We're building this as a community. The site is live and open — your contributions ship to real users.
+Paste a link, get a YouTube playlist, share it with anyone. That's the whole idea.
 
-### Getting Started
+## 🚀 How It Works
 
-No API keys needed. Clone and run:
+| | |
+|---|---|
+| **1. Paste** | Drop a Spotify or Apple Music playlist URL |
+| **2. Convert** | Every track is matched on YouTube automatically |
+| **3. Share** | Get one YouTube link with all your songs |
+
+No login. No app install. No waiting.
+
+## 🎧 Supported Sources
+
+```
+Spotify        →  ✅  open.spotify.com/playlist/…
+Apple Music    →  ✅  music.apple.com/…/playlist/…
+                  ↳  YouTube playlist, ready to share
+```
+
+## ⚡ Quick Start
+
+No API keys needed — clone and run.
 
 ```bash
 git clone https://github.com/junnnnnw00/justpasteyourplaylist.git
@@ -33,90 +61,107 @@ npm install
 npm run dev
 ```
 
-Open [localhost:3000](http://localhost:3000). That's it.
+Open **[localhost:3000](http://localhost:3000)**. That's it.
 
-### What We Need Help With
+## 🛠 Tech Stack
 
-**Platform Support**
-- [ ] Tidal playlist support
-- [ ] Amazon Music playlist support
-- [ ] SoundCloud playlist support
-- [ ] Deezer playlist support
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 16 (App Router) |
+| Language | TypeScript (strict) |
+| Styling | Tailwind CSS 4 |
+| Spotify | Embed page parsing — *no API key* |
+| Apple Music | Public page parsing — *no API key* |
+| YouTube | `youtube-sr` scraping — *no API key* |
+| Hosting | Vercel |
 
-**Core Features**
-- [ ] Progress indicator during conversion (track-by-track)
-- [ ] Playlist caching — don't re-search tracks we've already found
-- [ ] Better YouTube matching algorithm (title similarity scoring)
-- [ ] Handle large playlists (500+ tracks) gracefully with streaming
+## 💸 Cost
 
-**UX**
-- [ ] Dark/light mode toggle
+**$0 / month. Zero API keys.** No Spotify developer account, no YouTube quota, no Apple Music token — everything runs on public page scraping. Hosting fits the Vercel free tier.
+
+## 🧭 Roadmap
+
+The site is live and open — contributions ship to real users. Pick anything below.
+
+<details>
+<summary><strong>🎵 Platform support</strong></summary>
+
+- [ ] Tidal
+- [ ] Amazon Music
+- [ ] SoundCloud
+- [ ] Deezer
+
+</details>
+
+<details>
+<summary><strong>⚙️ Core features</strong></summary>
+
+- [ ] Track-by-track progress indicator during conversion
+- [ ] Playlist caching — skip re-searching matched tracks
+- [ ] Smarter YouTube matching (title similarity scoring)
+- [ ] Stream large playlists (500+ tracks) gracefully
+
+</details>
+
+<details>
+<summary><strong>🎨 UX</strong></summary>
+
+- [ ] Dark / light mode toggle
 - [ ] Mobile-responsive polish
 - [ ] Copy individual YouTube links per track
-- [ ] Drag-and-drop reorder before generating playlist
-- [ ] Share button with native share API
+- [ ] Drag-and-drop reorder before generating
+- [ ] Native share button
 - [ ] Playlist preview with album art
 
-**Reliability**
-- [ ] Apple Music parsing is fragile — needs a more robust extraction method
-- [ ] Fallback search when youtube-sr fails
-- [ ] Rate limiting to prevent abuse
-- [ ] Error tracking and monitoring
+</details>
 
-**Infra**
-- [ ] Tests — unit tests for URL parsing, integration tests for API
-- [ ] CI/CD pipeline with GitHub Actions
-- [ ] Analytics (privacy-respecting)
+<details>
+<summary><strong>🛡 Reliability & infra</strong></summary>
+
+- [ ] More robust Apple Music extraction
+- [ ] Fallback search when `youtube-sr` fails
+- [ ] Rate limiting
+- [ ] Error tracking / monitoring
+- [ ] Tests (URL parsing units, API integration)
+- [ ] CI/CD with GitHub Actions
+
+</details>
+
+## 🤝 Contributing
+
+PRs welcome. Keep it simple — a few principles:
+
+- **Single purpose.** Every feature serves the core flow: *paste → convert → share*.
+- **No accounts, no keys.** Scraping only. No developer accounts, no quotas, no costs.
+- **TypeScript, strictly typed.**
+- **Run `npm run build` before opening a PR.**
+
+```bash
+npm run dev      # local development
+npm run build    # production build + type check
+npm run lint     # lint
+```
 
 ### Project Structure
 
 ```
 src/
 ├── app/
-│   ├── page.tsx          # Main UI — paste input, results display
-│   ├── layout.tsx        # Root layout, metadata, OG tags
-│   ├── globals.css       # Tailwind imports
-│   └── api/
-│       └── convert/
-│           └── route.ts  # POST /api/convert — orchestrates the conversion
+│   ├── page.tsx              # UI — paste input, results
+│   ├── layout.tsx            # Metadata, OG tags
+│   └── api/convert/route.ts  # POST /api/convert — orchestration
 └── lib/
-    ├── types.ts          # Shared TypeScript types
-    ├── spotify.ts        # Spotify embed page parsing
-    ├── apple-music.ts    # Apple Music HTML parsing
-    └── youtube.ts        # YouTube search via youtube-sr (no API key)
+    ├── spotify.ts            # Spotify embed parsing
+    ├── apple-music.ts        # Apple Music page parsing
+    ├── youtube.ts            # youtube-sr search (no API key)
+    └── types.ts              # Shared types
 ```
 
-### Guidelines
+## 📄 License
 
-- **Keep it simple.** This is a single-purpose tool. Features should serve the core flow: paste → convert → share.
-- **No accounts.** No sign-up, no login. The app works instantly.
-- **No API keys. Period.** We use scraping for everything — Spotify embeds, Apple Music pages, youtube-sr. No developer accounts, no quotas, no costs. Keep it that way.
-- **TypeScript only.** All code is strictly typed.
-- **Test your changes.** Run `npm run build` before submitting a PR.
+[MIT](LICENSE) — do whatever you want.
 
-### Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| Framework | Next.js 16 (App Router) |
-| Styling | Tailwind CSS 4 |
-| Spotify | Embed page parsing (no API key) |
-| Apple Music | Public page parsing (no API key) |
-| YouTube | youtube-sr scraping (no API key) |
-| Hosting | Vercel |
-
-### Running Checks
-
-```bash
-npm run dev      # local development
-npm run build    # production build + type check
-npm run lint     # ESLint
-```
-
-## Cost
-
-**$0. Zero API keys.** Everything uses public page scraping — no Spotify developer account, no YouTube API key, no Apple Music token. Just clone and run. Vercel hosting is free tier.
-
-## License
-
-[MIT](LICENSE)
+<div align="center">
+<br />
+<sub>Built by <a href="https://github.com/junnnnnw00">@junnnnnw00</a> · Also building <a href="https://www.producthunt.com/products/athens">Athens</a>, a music-rating app.</sub>
+</div>
