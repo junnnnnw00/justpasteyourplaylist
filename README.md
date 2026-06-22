@@ -8,12 +8,6 @@
 
 Free · No sign-up · No API keys · Open source
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-17181c?style=flat-square)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-f0281e?style=flat-square)](#-contributing)
-[![Next.js](https://img.shields.io/badge/Next.js-16-17181c?style=flat-square&logo=next.js)](https://nextjs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![Deploy](https://img.shields.io/badge/Deploy-Vercel-000?style=flat-square&logo=vercel)](https://vercel.com/new/clone?repository-url=https://github.com/junnnnnw00/justpasteyourplaylist)
-
 **[Live Demo](https://justpasteyourplaylist.vercel.app)** · [How it works](#-how-it-works) · [Quick start](#-quick-start) · [Contributing](#-contributing)
 
 <a href="https://www.producthunt.com/products/just-paste-your-playlist?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-just-paste-your-playlist" target="_blank" rel="noopener noreferrer"><img alt="Just Paste Your Playlist - Share any playlist to anyone | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1177734&theme=light&t=1782100578430"></a>
